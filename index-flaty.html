@@ -86,151 +86,172 @@
     <meta property="article:author" content="https://www.facebook.com/garciagarturo" />
     <meta property="article:publisher" content="https://www.facebook.com/Tu-en-Internet-1752717881669199" />
 
-  <!-- Bootstrap core CSS y fuente-->
-    <!-- Hace referencia al CDN de Bootstrap, puede cambiar esta línea con las propias de Bootswatch -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="boots-flaty.css">
+  <!-- CSS's y fuente-->
+    <!-- <link rel="stylesheet" href="boots-flaty.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <!-- Fuentes de Google -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,700" rel="stylesheet"> 
-
-  <!-- icons -->
-    <!-- Reconocidas colecciones de Iconos. Deheche las que no necesite -->
-    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" rel="stylesheet">
-    <link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/octicons.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/cc-icons/1.2.1/css/cc-icons.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   
   <!-- Efectos -->
     <!-- Animaciones y sombras elimine las que no use -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet">
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <link href="https://rawgit.com/GarciaGArturo/xtraSombras/master/xtrasombras.css" rel="stylesheet">
-
-  <!-- Estilos Personalizados y extra Overwrites-->
-    <!-- Ponga aquí sus CSS personalizados -->
-    <!-- <link href="/template.css" type="text/css" rel="stylesheet" />
-    <link href="/custom.css" type="text/css" rel="stylesheet" /> -->
     
-
+  <!-- Javascript JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(document).ready(function($) {
+        $('#accordion').find('.accordion-toggle').click(function(){
+    
+          //Expand or collapse this panel
+          $(this).next().slideToggle('fast');
+    
+          //Hide the other panels
+          $(".accordion-content").not($(this).next()).slideUp('fast');
+    
+        });
+      });
+    </script>
+  <!-- Estilos -->
     <style>
+      .accordion-toggle {cursor: pointer; margin: 0;}
+      .accordion-content {display: none;}
+      .accordion-content.default {display: block;}
+      /*scrollUp*/
       .back-to-top {
-        cursor: pointer;
-        position: fixed;
-        bottom: 20px;
-        left: 20px;
-        display:none;
-        opacity: 0.5;
-        filter: alpha(opacity=50);
-    }
+          cursor: pointer;
+          position: fixed;
+          bottom: 20px;
+          left: 20px;
+          display:none;
+          opacity: 0.5;
+          filter: alpha(opacity=50);
+      }
+      body {
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 2.5rem;
+      }
+      .m { border: 0px dashed red; }
+      .accordion {
+        max-width: 29rem;
+        min-width: 17rem;
+        margin: auto;
+        padding: 0.3em;
+      }
+      #accordion h5 {
+        font-weight: 300;
+        color: #18bc9c; 
+      }
+      .accordion-content p {
+        color: #455963;;
+        font-size: 1rem;
+        height: 100%;
+      }
+      .accordion-content button {
+        color: #fff;
+        background-color: #18BC9C;
+        border-color: #18BC9C;
+        padding: 0.5rem 1rem;
+        font-size: 1.171875rem;
+        line-height: 1.5;
+        border-radius: 0.3rem;
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+      .accordion-content button:hover {
+        color: #fff;
+        background-color: #149a80;
+        border-color: #128f76;
+      }
+      .telefono {
+        padding: 0.5rem 1rem;
+        font-size: 2rem;
+        line-height: 1.5;
+        border-radius: 0.3rem;
+        color: #7b8a8b;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        width: 88%;
+      }
+      .icon-gde { width: 33%; cursor: pointer;}
+      .icon-gde-bco { width: 33%; cursor: not-allowed;}
+      .pb-numero {
+        padding-bottom: 2em;
+      }
+      .text-center { text-align: center; }
+      #p1 a { 
+        text-decoration: none;
+        color: #34B7F1;
+      }
+      #p1 .texto { 
+        line-height: 2.2em;
+
+      }
+      ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: lightgray;
+      }
+      ::-moz-placeholder { /* Firefox 19+ */
+        color: lightgray;
+      }
+      :-ms-input-placeholder { /* IE 10+ */
+        color: lightgray;
+      }
+      :-moz-placeholder { /* Firefox 18- */
+        color: lightgray;
+      }
+      input { 
+        color: #075E54;
+        border-bottom: 3px rgba(102, 153, 204, 0.3) solid;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        padding: 0.15em 0.4em;
+        font-size: 0.7em;
+      }
     </style>
+
 </head>
 
 <body>
-  <!-- Puede borrar todo lo que se encuentra entre las etiquetas BODY -->
-  <div class="container d-flex h-100 mx-auto flex-column px-0">
-    <div class="col-sm-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-6 offset-xl-3 px-0 border">
-    <div id="accordion">
-      <div class="card card-x">
-        <div class="card-header-x" id="botonPrincipal">
-          <h5 class="h5-faq mb-0">
-            <a href="#botonPrincipal" class="" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Número
-            </a>
-          </h5>
-        </div>
 
-        <div id="collapseOne" class="collapse show" aria-labelledby="botonPrincipal" data-parent="#accordion">
-          <div class="card-body pb-5 pt-0 row">
+  <div id="accordion" class="accordion m">
 
-            <p class="text-teal-green small col-sm-12"> a 12 dígitos</p>
-            <div class=" col-sm-6 col-xs-7 text-center">
-            <input class="form-control form-control-lg" type="tel" id="n1" value="+52" placeholder="Introduce el número">
-            <button id="b1" class="btn btn-success" onclick="pone()">Crear botón</button>
-            </div>
-            <p id="p1" class="text-center col-sm-6 col-xs-5 text-center"><i class="fab fa-whatsapp icon-gde-muted text-white"></i></p>
-
-          </div>
-        </div>
+    <h5 class="h5-faq accordion-toggle">Número</h5>
+    <div class="accordion-content default pb-numero">
+      <!-- <p> a 12 dígitos (+521234567890)</p> -->
+      <div class="text-center">
+      <input class="telefonoarea" type="tel" id="n1" value="+52" placeholder="+País" size="2">
+      <input class="telefonoCuerpo" type="tel" id="n2" value="" placeholder="10 dígitos" size="8">
+      <button id="b1" class="" onclick="pone()">Crear botón</button>
       </div>
-      <div class="card card-x">
-        <div class="card-header-x" id="comoSeUsa">
-          <h5 class="h5-faq mb-0">
-            <a href="#comoSeUsa" class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              ¿Cómo se usa?
-            </a>
-          </h5>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="comoSeUsa" data-parent="#accordion">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-          </div>
-        </div>
-      </div>
-      <div class="card card-x">
-        <div class="card-header-x" id="privacidad">
-          <h5 class="h5-faq mb-0">
-            <a href="#privacidad" class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Privacidad
-            </a>
-          </h5>
-        </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="privacidad" data-parent="#accordion">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-          </div>
-        </div>
-      </div>
-      <div class="card card-x">
-        <div class="card-header-x" id="tips">
-          <h5 class="h5-faq mb-0">
-            <a href="#tips" class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              Tips
-            </a>
-          </h5>
-        </div>
-        <div id="collapseFour" class="collapse" aria-labelledby="tips" data-parent="#accordion">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-          </div>
-        </div>
-      </div>
-      <div class="card card-x">
-        <div class="card-header-x" id="acercaDe">
-          <h5 class="h5-faq mb-0">
-            <a href="#acercaDe" class="collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-              Acerca de ...
-            </a>
-          </h5>
-        </div>
-        <div id="collapseFive" class="collapse" aria-labelledby="acercaDe" data-parent="#accordion">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-          </div>
-        </div>
-      </div>
+      <p id="p1" class="text-center"><img class="icon-gde-bco" src="wpBtnBco.svg"></p>
     </div>
+
+    <h5 class="h5-faq accordion-toggle">¿Cómo se usa?</h5>
+    <div class="accordion-content">
+      <p>Lorem ipsum dolor sit amet mauris eu turpis.</p>
     </div>
+
+    <h5 class="h5-faq accordion-toggle">Privacidad</h5>
+    <div class="accordion-content">
+      <p>Vivamus facilisisnibh scelerisque laoreet.</p>
+    </div>
+
+    <h5 class="h5-faq accordion-toggle">Tips</h5>
+    <div class="accordion-content">
+      <p>Vivamus facilisisnibh scelerisque laoreet.</p>
+    </div>
+
+    <h5 class="h5-faq accordion-toggle">Acerca de ...</h5>
+    <div class="accordion-content">
+      <p>Vivamus facilisisnibh scelerisque laoreet.</p>
+    </div>
+
   </div>
 
   <!-- JavaScript  -->
-    <!-- JQuery -->
-    <!-- Se sugiere no borrar esta línea -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <!-- Bootstrap js -->
-    <!-- Se sugiere no borrar esta línea a menos que no use componentes JD de B! -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <!-- Etiqueta par botón de GitHub -->
-    <!-- Script para botón de GitHub, puede borrarlo -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <!-- Script para servicios de Addthis, si no tiene cuenta, puede borrar -->
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a6f7cdcba180dee"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
               <script> new WOW().init(); </script>
@@ -254,8 +275,9 @@
 
       
       function pone() {
-        texto = document.getElementById("n1");
-        enlace = "<a href='" + "whatsapp://send?phone=" + texto.value + "'><i class='wow bounce fab fa-whatsapp icon-gde text-teal-green otto' data-wow-duration='0.5s' data-wow-iteration='4'></i><br>Click en el icono</a>";
+        area = document.getElementById("n1");
+        telefono = document.getElementById("n2");
+        enlace = "<a href='" + "whatsapp://send?phone=" + area.value + telefono.value + "'><img class='wow bounce icon-gde' data-wow-duration='0.5s' data-wow-iteration='3' src='wpBtn.svg'><br><span class='texto'>Click en el icono para abrir WhatsApp</span></a>";
         document.getElementById("p1").innerHTML = enlace;
       }
       </script>
