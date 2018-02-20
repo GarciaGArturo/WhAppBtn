@@ -91,7 +91,7 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="boots-flaty.css">
     <!-- Fuentes de Google -->
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,700" rel="stylesheet"> 
 
   <!-- icons -->
     <!-- Reconocidas colecciones de Iconos. Deheche las que no necesite -->
@@ -104,7 +104,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/cc-icons/1.2.1/css/cc-icons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   
   <!-- Efectos -->
     <!-- Animaciones y sombras elimine las que no use -->
@@ -133,11 +133,11 @@
 
 <body>
   <!-- Puede borrar todo lo que se encuentra entre las etiquetas BODY -->
-  <div class="cover-container d-flex h-100 mx-auto flex-column">
-    
+  <div class="container d-flex h-100 mx-auto flex-column px-0">
+    <div class="col-sm-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-6 offset-xl-3 px-0 border">
     <div id="accordion">
-      <div class="card">
-        <div class="card-header" id="botonPrincipal">
+      <div class="card card-x">
+        <div class="card-header-x" id="botonPrincipal">
           <h5 class="h5-faq mb-0">
             <a href="#botonPrincipal" class="" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
               Botón
@@ -146,13 +146,18 @@
         </div>
 
         <div id="collapseOne" class="collapse show" aria-labelledby="botonPrincipal" data-parent="#accordion">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          <div class="card-body py-5">
+
+            <h3 class="text-teal-green">Watsapea a alguien</h3>
+            <input class="form-control form-control-lg" type="tel" id="n1" value="+52" placeholder="Introduce el número">
+            <button id="b1" class="btn btn-success" onclick="pone()">Crear botón</button>
+            <p id="p1" class="text-center"><i class="fab fa-whatsapp icon-gde-muted text-white"></i></p>
+
           </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-header" id="comoSeUsa">
+      <div class="card card-x">
+        <div class="card-header-x" id="comoSeUsa">
           <h5 class="h5-faq mb-0">
             <a href="#comoSeUsa" class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
               ¿Cómo se usa?
@@ -165,8 +170,8 @@
           </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-header" id="privacidad">
+      <div class="card card-x">
+        <div class="card-header-x" id="privacidad">
           <h5 class="h5-faq mb-0">
             <a href="#privacidad" class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
               Privacidad
@@ -179,8 +184,8 @@
           </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-header" id="tips">
+      <div class="card card-x">
+        <div class="card-header-x" id="tips">
           <h5 class="h5-faq mb-0">
             <a href="#tips" class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
               Tips
@@ -193,8 +198,8 @@
           </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-header" id="acercaDe">
+      <div class="card card-x">
+        <div class="card-header-x" id="acercaDe">
           <h5 class="h5-faq mb-0">
             <a href="#acercaDe" class="collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
               Acerca de ...
@@ -208,7 +213,7 @@
         </div>
       </div>
     </div>
-
+    </div>
   </div>
 
   <!-- JavaScript  -->
@@ -225,6 +230,8 @@
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <!-- Script para servicios de Addthis, si no tiene cuenta, puede borrar -->
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a6f7cdcba180dee"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+              <script> new WOW().init(); </script>
     
     <script>
       // $(function() {
@@ -246,7 +253,7 @@
       
       function pone() {
         texto = document.getElementById("n1");
-        enlace = "<a href='" + "whatsapp://send?phone=" + texto.value + "'>Whatsapp</a>";
+        enlace = "<a href='" + "whatsapp://send?phone=" + texto.value + "'><i class='wow bounce fab fa-whatsapp icon-gde text-teal-green otto' data-wow-duration='0.5s' data-wow-iteration='3'></i><br>Click en el icono</a>";
         document.getElementById("p1").innerHTML = enlace;
       }
       </script>

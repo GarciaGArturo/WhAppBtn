@@ -1,3 +1,9 @@
+.icon-gde { font-size: 8em; text-shadow: -1px 1px 1px #B00000; cursor: pointer;}
+.icon-gde-muted { font-size: 8em; text-shadow: 2px -1px 2px #aaa;}
+.otto {
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2)
+}
+
 a,
 a:focus,
 a:hover { 
@@ -471,7 +477,8 @@ h5, .h5 {
 }
 
 h5.h5-faq {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 200;
 }
 h5.h5-faq a {
   text-decoration: none;
@@ -4578,6 +4585,7 @@ tbody.collapse.show {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
+.card-x { border: none ! important; }
 
 .card > hr {
   margin-right: 0;
@@ -4627,6 +4635,13 @@ tbody.collapse.show {
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-header-x {
+	padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: transparent;
+  border-bottom: none;
 }
 
 .card-header:first-child {
@@ -8961,6 +8976,14 @@ button.bg-dark:focus {
 .text-white {
   color: #fff !important;
 }
+
+.text-teal-dark { color: #075E54; }
+.text-teal-green { color: #128C7E; }
+.text-light-green { color: #25D366; }
+.text-chat-bubble { color: #DCF8C6; }
+.text-checkmark-blue { color: #34B7F1; }
+.text-chat-bg { color: #ECE5DD; }
+.text-gris-oscuro { color: #455963; }
 
 .text-primary {
   color: #2C3E50 !important;
