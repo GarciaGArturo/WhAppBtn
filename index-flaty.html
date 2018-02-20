@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Modifique con sus propias etiquetas de Google Analytics y TagManager -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113288689-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-113288689-1');
+    </script>
+    <script>
+    // Seguimiento de enlaces externos
+    var trackOutboundLink = function(url) {
+       ga('send', 'event', 'outbound', 'click', url, {
+         'transport': 'beacon',
+         'hitCallback': function(){document.location = url;}
+       });
+    }
+    </script>
+
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Modifique con sus propios datos el título y las MetaEtiquetas -->
+    <title>Boton WhatsApp</title>
+
+    <meta name="description" content="Plantilla en blanco basada en Bootstrap 4. Lista para usar. Rápida, Ligera, Completa, Gratis. Construida con estilo y librerías CDN externas, permite comenzar a trabajar de inmediato sin instalar nada extra.">
+    <meta name="keywords" content="Bootstrap template, plantilla bootstrap, blank template, plantilla en blanco, html5 template, free, gratis, plantillas vacías, free templates">
+
+    <meta name="revisit-after" content="1 month">
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="GarciaGArturo.github.io">
+
+  <!-- Favicons -->
+    <!-- Principales Favicons e Iconos orientados a los principales dispositivos -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/GarciaGArturo/garciagarturo.github.io/master/assets/blank-b4/favicon.ico" />
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/GarciaGArturo/garciagarturo.github.io/master/assets/blank-b4/favicon.png" />
+    <link rel="icon" href="https://raw.githubusercontent.com/GarciaGArturo/garciagarturo.github.io/master/assets/blank-b4/animated_favicon.gif" type="image/gif" >
+
+    <link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/GarciaGArturo/garciagarturo.github.io/master/assets/blank-b4/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/GarciaGArturo/garciagarturo.github.io/master/assets/blank-b4/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="https://raw.githubusercontent.com/GarciaGArturo/garciagarturo.github.io/master/assets/blank-b4/favicon-64x64.png">
+    <link rel="icon" type="image/png" sizes="194x194" href="https://raw.githubusercontent.com/GarciaGArturo/garciagarturo.github.io/master/assets/blank-b4/favicon-194x194.png">
+
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/GarciaGArturo/garciagarturo.github.io/master/assets/blank-b4/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://raw.githubusercontent.com/GarciaGArturo/garciagarturo.github.io/master/assets/blank-b4/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://raw.githubusercontent.com/GarciaGArturo/garciagarturo.github.io/master/assets/blank-b4/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://raw.githubusercontent.com/GarciaGArturo/garciagarturo.github.io/master/assets/blank-b4/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://raw.githubusercontent.com/GarciaGArturo/garciagarturo.github.io/master/assets/blank-b4/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://raw.githubusercontent.com/GarciaGArturo/garciagarturo.github.io/master/assets/blank-b4/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://raw.githubusercontent.com/GarciaGArturo/garciagarturo.github.io/master/assets/blank-b4/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://raw.githubusercontent.com/GarciaGArturo/garciagarturo.github.io/master/assets/blank-b4/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://raw.githubusercontent.com/GarciaGArturo/garciagarturo.github.io/master/assets/blank-b4/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://raw.githubusercontent.com/GarciaGArturo/garciagarturo.github.io/master/assets/blank-b4/apple-touch-icon-180x180.png">
+
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/GarciaGArturo/garciagarturo.github.io/master/assets/blank-b4/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/GarciaGArturo/garciagarturo.github.io/master/assets/blank-b4/android-chrome-256x256.png" sizes="256x256"> 
+
+    <link rel="manifest" href="https://raw.githubusercontent.com/GarciaGArturo/garciagarturo.github.io/master/assets/blank-b4/manifest.json">
+    <meta name="apple-mobile-web-app-title" content="https://garciagarturo.github.io">
+    <meta name="application-name" content="https://garciagarturo.github.io">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="msapplication-TileImage" content="https://raw.githubusercontent.com/GarciaGArturo/garciagarturo.github.io/master/assets/blank-b4/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="mask-icon" href="https://raw.githubusercontent.com/GarciaGArturo/garciagarturo.github.io/master/assets/blank-b4/safari-pinned-tab.svg" color="#5bbad5">   
+
+  <!-- OpenGraph -->
+    <!-- Las principales Etiquetas OpenGraph que puede personalizar -->
+    <meta property="og:title" content="Blank Template B4!" />
+    <meta property="og:description" content="Plantilla basada en Bootstrap 4. Lista para usar. Rápida, Ligera, Completa y Gratis. Construida con estilo y librerías CDN externas, permite comenzar a trabajar de inmediato sin instalar nada extra." />
+
+    <meta property="og:image" content="https://raw.githubusercontent.com/GarciaGArturo/garciagarturo.github.io/master/assets/blank-b4/ogBlankTemplate.jpg" /> 
+    <meta property="og:image:alt" content="Plantilla Blank B4, en blanco lista para usar." />
+    <meta property="og:site_name" content="Blank Template B4!" />
+
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://garciagarturo.github.io/Blank-B4/" />
+    <meta property="article:tag" content="templates, plantillas, html5, bootstrap" />
+
+    <meta property="article:author" content="https://www.facebook.com/garciagarturo" />
+    <meta property="article:publisher" content="https://www.facebook.com/Tu-en-Internet-1752717881669199" />
+
+  <!-- Bootstrap core CSS y fuente-->
+    <!-- Hace referencia al CDN de Bootstrap, puede cambiar esta línea con las propias de Bootswatch -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="boots-flaty.css">
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700" rel="stylesheet"> 
+
+  <!-- icons -->
+    <!-- Reconocidas colecciones de Iconos. Deheche las que no necesite -->
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" rel="stylesheet">
+    <link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/octicons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/cc-icons/1.2.1/css/cc-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  
+  <!-- Efectos -->
+    <!-- Animaciones y sombras elimine las que no use -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link href="https://rawgit.com/GarciaGArturo/xtraSombras/master/xtrasombras.css" rel="stylesheet">
+
+  <!-- Estilos Personalizados y extra Overwrites-->
+    <!-- Ponga aquí sus CSS personalizados -->
+    <!-- <link href="/template.css" type="text/css" rel="stylesheet" />
+    <link href="/custom.css" type="text/css" rel="stylesheet" /> -->
+    
+
+    <style>
+      .back-to-top {
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        display:none;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+    </style>
+</head>
+
+<body>
+  <!-- Puede borrar todo lo que se encuentra entre las etiquetas BODY -->
+  <div class="cover-container d-flex h-100 mx-auto flex-column">
+    
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="botonPrincipal">
+          <h5 class="h5-faq mb-0">
+            <a href="#" class="" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Botón
+            </a>
+          </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="botonPrincipal" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="comoSeUsa">
+          <h5 class="h5-faq mb-0">
+            <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              ¿Cómo se usa?
+            </a>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="comoSeUsa" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="privacidad">
+          <h5 class="h5-faq mb-0">
+            <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Privacidad
+            </a>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="privacidad" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="tips">
+          <h5 class="h5-faq mb-0">
+            <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Tips
+            </a>
+          </h5>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="tips" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="acercaDe">
+          <h5 class="h5-faq mb-0">
+            <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Acerca de ...
+            </a>
+          </h5>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="acercaDe" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JavaScript  -->
+    <!-- JQuery -->
+    <!-- Se sugiere no borrar esta línea -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Bootstrap js -->
+    <!-- Se sugiere no borrar esta línea a menos que no use componentes JD de B! -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- Etiqueta par botón de GitHub -->
+    <!-- Script para botón de GitHub, puede borrarlo -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <!-- Script para servicios de Addthis, si no tiene cuenta, puede borrar -->
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a6f7cdcba180dee"></script>
+    
+    <script>
+      // $(function() {
+      //    $("#n1").on("click", 
+      //     function(){ $("#n1").val("");}
+      //   );
+
+      //   $("#b1").on("click", 
+      //     function() {
+      //       var num = $("#n1");
+      //       num.val(num.val() * num.val());
+      //     }
+      //   );
+      // });
+      var tel = "";
+      var tecleado = "hola";
+      var texto;
+
+      
+      function pone() {
+        texto = document.getElementById("n1");
+        enlace = "<a href='" + "whatsapp://send?phone=" + texto.value + "'>Whatsapp</a>";
+        document.getElementById("p1").innerHTML = enlace;
+      }
+      </script>
+
+    <!-- Start of StatCounter Code for Default Guide -->
+      <script>
+      var sc_project=11616942; 
+      var sc_invisible=1; 
+      var sc_security="abb20058"; 
+      var scJsHost = (("https:" == document.location.protocol) ?
+      "https://secure." : "http://www.");
+      </script>
+      <script src="https://www.statcounter.com/counter/counter.js" async></script>
+      <noscript><div class="statcounter"><a title="Web Analytics
+      Made Easy - StatCounter" href="http://statcounter.com/"
+      target="_blank"><img class="statcounter"
+      src="//c.statcounter.com/11616942/0/abb20058/1/" alt="Web
+      Analytics Made Easy - StatCounter"></a></div></noscript>
+      <!-- End of StatCounter Code for Default Guide -->
+      
+    <!-- Control de botón scroll-up -->
+      <script>
+        $(document).ready(function(){
+         $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('#back-to-top').fadeIn();
+                } else {
+                    $('#back-to-top').fadeOut();
+                }
+            });
+            // scroll body to 0px on click
+            $('#back-to-top').click(function () {
+                $('#back-to-top').tooltip('hide');
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+            
+            $('#back-to-top').tooltip('show');
+          });
+        </script>
+        <!-- Control de botón scroll-up --> 
+  
+</body>
+</html>
