@@ -277,7 +277,8 @@
       function pone() {
         area = document.getElementById("n1");
         telefono = document.getElementById("n2");
-        enlace = "<a href='" + "whatsapp://send?phone=" + area.value + telefono.value + "'><img class='wow bounce icon-gde' data-wow-duration='0.5s' data-wow-iteration='3' src='wpBtn.svg'><br><span class='texto'>Click en el icono para abrir WhatsApp</span></a>";
+        //enlace = "<a href='" + "whatsapp://send?phone=" + area.value + telefono.value + "'><img class='wow bounce icon-gde' data-wow-duration='0.5s' data-wow-iteration='3' src='wpBtn.svg'><br><span class='texto'>Click en el icono para abrir WhatsApp</span></a>";
+        enlace = "<a href='" + "https://wa.me/" + area.value + telefono.value + "'><img class='wow bounce icon-gde' data-wow-duration='0.5s' data-wow-iteration='3' src='wpBtn.svg'><br><span class='texto'>Click en el icono para abrir WhatsApp</span></a>";
         document.getElementById("p1").innerHTML = enlace;
       }
       </script>
